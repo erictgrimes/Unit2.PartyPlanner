@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Party Planner</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>Party Planner</h1>
+    </header>
+    <div id="contatiner_new_party">
+      <form id="new_party">
+        <label for="name">
+          Name
+          <input typ="text" id="name" name="name" placeholder="name" required />
+        </label>
+        <label for="date">
+          Date
+          <input
+            type="date"
+            id="date"
+            name="date"
+            placeholder="date"
+            required
+          />
+        </label>
+        <label for="time">
+          Time
+          <input
+            type="time"
+            id="time"
+            name="time"
+            placeholder="time"
+            required
+          />
+        </label>
+        <label for="location">
+          Location
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="location"
+            required
+          />
+        </label>
+        <label for="description">
+          Description
+          <textarea
+            id="description"
+            name="description"
+            placeholder="description"
+            required
+          ></textarea>
+        </label>
+        <button type="subimt">Add</button>
+      </form>
+    </div>
+    <div id="pulled_parties"></div>
+  </body>
 </html>
