@@ -11,31 +11,15 @@
     <header>
       <h1>Party Planner</h1>
     </header>
-    <div id="contatiner_new_party">
+    <div id="container_new_party">
       <form id="new_party">
         <label for="name">
           Name
-          <input typ="text" id="name" name="name" placeholder="name" required />
+          <input typ="text" id="name" name="name" placeholder="Name" required />
         </label>
         <label for="date">
           Date
-          <input
-            type="date"
-            id="date"
-            name="date"
-            placeholder="date"
-            required
-          />
-        </label>
-        <label for="time">
-          Time
-          <input
-            type="time"
-            id="time"
-            name="time"
-            placeholder="time"
-            required
-          />
+          <input type="datetime-local" id="date" name="date" placeholder="Date and Time" required />
         </label>
         <label for="location">
           Location

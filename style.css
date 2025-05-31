@@ -1,5 +1,18 @@
 html {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
+header {
+  text-align: center;
+}
+
+#container_new_party {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 70%;
+  border: 2px solid white;
+}
