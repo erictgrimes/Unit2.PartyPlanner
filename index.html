@@ -12,14 +12,26 @@
       <h1>Party Planner</h1>
     </header>
     <div id="container_new_party">
+      <h2><u>New Event</u></h2>
       <form id="new_party">
         <label for="name">
-          Name
-          <input typ="text" id="name" name="name" placeholder="Name" required />
+          Event Name
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
         </label>
         <label for="date">
           Date
-          <input type="datetime-local" id="date" name="date" placeholder="Date and Time" required />
+          <input
+            type="datetime-local"
+            id="date"
+            name="date"
+            required
+          />
         </label>
         <label for="location">
           Location
@@ -40,7 +52,7 @@
             required
           ></textarea>
         </label>
-        <button type="subimt">Add</button>
+        <button type="submit">Add</button>
       </form>
     </div>
     <div id="pulled_parties"></div>

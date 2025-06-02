@@ -1,18 +1,74 @@
 html {
-  background-color: black;
-  color: white;
+  background-color: #161b24;
+  color: #c9b124;
 }
 
 header {
   text-align: center;
+  position: fixed;
+  top: 0;
+  background-color: #485263;
+  width: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 250px;
 }
 
 #container_new_party {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 20px;
-  width: 70%;
-  border: 2px solid white;
+  width: 50%;
+  border: 2px solid #c9b124;
+}
+
+#new_party h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#new_party label {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+#new_party textarea {
+  height: 100px;
+}
+
+#new_party button {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#pulled_parties {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.party-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 50%;
+  border: 2px solid #c9b124;
+  padding: 1rem;
+}
+
+.party-card p {
+    color: rgb(234, 225, 194);
 }
