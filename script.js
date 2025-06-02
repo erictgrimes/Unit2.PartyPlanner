@@ -81,12 +81,14 @@ const removeParty = async (id) => {
 //adds a function to add a party to the API
 const addParty = async (name, description, date, location) => {
   try {
+    console.log(date);
     await fetch(API_URL, {
+      
       method: "POST",
       body: JSON.stringify({
         name,
         description,
-        date,
+        date: new Date(date).toISOString(),
         location,
       }),
       headers: {
@@ -106,15 +108,15 @@ const addListenerToForm = () => {
 
     await addParty(
       form.name.value,
+      form.description.value,
       form.date.value,
-      form.location.value,
-      form.description.value
+      form.location.value
     );
 
     form.name.value = "";
+    form.description.value = "";
     form.date.value = "";
     form.location.value = "";
-    form.description.value = "";
   });
 };
 
